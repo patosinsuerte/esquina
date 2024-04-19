@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="container__header">
+            <h2 class="container__header-text">Registrarse</h2>
+        </div>
+        <form action="post" class="form">
+            <div class="form__item">
+                <img src="/assets/icons/rut.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="text" placeholder="R.U.T" class="form__input">
+            </div>
+            <div class="form__item">
+                <img src="/assets/icons/user.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="text" placeholder="Nombre" class="form__input">
+            </div>
+            <div class="form__item">
+                <img src="/assets/icons/user.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="text" placeholder="Apellido" class="form__input">
+            </div>
+            <div class="form__item">
+                <img src="/assets/icons/mail.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="email" placeholder="Email" class="form__input">
+            </div>
+            <div class="form__item">
+                <img src="/assets/icons/lock.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="password" placeholder="Contraseña" class="form__input">
+            </div>
+            <div class="form__item">
+                <img src="/assets/icons/lock.svg" alt="RUT" class="form__img" draggable="false">
+                <input type="password" placeholder="Repite la contraseña" class="form__input">
+            </div>
+            <div class="form__buttons">
+                <button class="form__button">Registrarse</button>
+            </div>
+        </form>
+        <!--BOTONES OLVIDE CONTRASENA-->
+        <div class="container__footer">
+            <a class="container__footer-link" [routerLink]="'/auth/login'">Ya tienes una
+                cuenta?</a>
+        </div>
+    </div>
+
+</div>
+<shared-footer></shared-footer>
